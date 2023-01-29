@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container wrap">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
         <nav class="nav">
           <ul class="nav-list">
@@ -53,11 +53,15 @@
         <div class="container">
           <h1 class="title">Каталог послуг</h1>
           <ul class="sorting-list">
-            <li class="sorting-item"><button class="sorting-btn">Усі</button></li>
-            <li class="sorting-item"><button class="sorting-btn">Веб-сайти</button></li>
-            <li class="sorting-item"><button class="sorting-btn">Додатки</button></li>
-            <li class="sorting-item"><button class="sorting-btn">Дизайн</button></li>
-            <li class="sorting-item"><button class="sorting-btn">Маркетинг</button></li>
+            <li class="sorting-item"><button type="button" class="sorting-btn">Усі</button></li>
+            <li class="sorting-item">
+              <button type="button" class="sorting-btn">Веб-сайти</button>
+            </li>
+            <li class="sorting-item"><button type="button" class="sorting-btn">Додатки</button></li>
+            <li class="sorting-item"><button type="button" class="sorting-btn">Дизайн</button></li>
+            <li class="sorting-item">
+              <button type="button" class="sorting-btn">Маркетинг</button>
+            </li>
           </ul>
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -65,10 +69,12 @@
                 class="catalog-img"
                 src="./img/portfolio/tehno.jpg"
                 alt="Технокряк"
-                width="370"
+                height="294"
               />
-              <h2 class="catalog-subtitle">Технокряк</h2>
-              <p class="catalog-desc">Веб-сайт</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Технокряк</h2>
+                <p class="catalog-desc">Веб-сайт</p>
+              </div>
             </li>
             <li class="catalog-item">
               <img
@@ -77,8 +83,10 @@
                 alt="Постер New Orlean vs Golden Star"
                 width="370"
               />
-              <h2 class="catalog-subtitle">Постер New Orlean vs Golden Star</h2>
-              <p class="catalog-desc">Дизайн</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Постер New Orlean vs Golden Star</h2>
+                <p class="catalog-desc">Дизайн</p>
+              </div>
             </li>
             <li class="catalog-item">
               <img
@@ -87,8 +95,10 @@
                 alt="Ресторан Seafood"
                 width="370"
               />
-              <h2 class="catalog-subtitle">Ресторан Seafood</h2>
-              <p class="catalog-desc">Додаток</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Ресторан Seafood</h2>
+                <p class="catalog-desc">Додаток</p>
+              </div>
             </li>
             <li class="catalog-item">
               <img
@@ -97,8 +107,10 @@
                 alt="Проєкт Prime"
                 width="370"
               />
-              <h2 class="catalog-subtitle">Проєкт Prime</h2>
-              <p class="catalog-desc">Маркетинг</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Проєкт Prime</h2>
+                <p class="catalog-desc">Маркетинг</p>
+              </div>
             </li>
             <li class="catalog-item">
               <img
@@ -107,8 +119,10 @@
                 alt="Проєкт Boxes"
                 width="370"
               />
-              <h2 class="catalog-subtitle">Проєкт Boxes</h2>
-              <p class="catalog-desc">Додаток</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Проєкт Boxes</h2>
+                <p class="catalog-desc">Додаток</p>
+              </div>
             </li>
             <li class="catalog-item">
               <img
@@ -117,8 +131,10 @@
                 alt="Inspiration has no Borders"
                 width="370"
               />
-              <h2 class="catalog-subtitle">Inspiration has no Borders</h2>
-              <p class="catalog-desc">Веб-сайт</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Inspiration has no Borders</h2>
+                <p class="catalog-desc">Веб-сайт</p>
+              </div>
             </li>
             <li class="catalog-item">
               <img
@@ -127,23 +143,29 @@
                 alt="Видання Limited Edition"
                 width="370"
               />
-              <h2 class="catalog-subtitle">Видання Limited Edition</h2>
-              <p class="catalog-desc">Дизайн</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Видання Limited Edition</h2>
+                <p class="catalog-desc">Дизайн</p>
+              </div>
             </li>
             <li class="catalog-item">
               <img class="catalog-img" src="./img/portfolio/lab.jpg" alt="Проєкт LAB" width="370" />
-              <h2 class="catalog-subtitle">Проєкт LAB</h2>
-              <p class="catalog-desc">Маркетинг</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Проєкт LAB</h2>
+                <p class="catalog-desc">Маркетинг</p>
+              </div>
             </li>
             <li class="catalog-item">
               <img
                 class="catalog-img"
                 src="./img/portfolio/grow.jpg"
                 alt="Growing Business"
-                width="370"
+                height="294"
               />
-              <h2 class="catalog-subtitle">Growing Business</h2>
-              <p class="catalog-desc">Додаток</p>
+              <div class="inner">
+                <h2 class="catalog-subtitle">Growing Business</h2>
+                <p class="catalog-desc">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -152,9 +174,7 @@
     <footer class="footer">
       <div class="container">
         <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <address>
-          <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-        </address>
+        <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
         <ul class="contacts-list">
           <li class="contacts-item">
             <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
